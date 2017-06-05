@@ -1,0 +1,28 @@
+---
+:source:
+  :path: test
+  :file: test_determinetriangle.c
+:successes:
+- :test: test_determinetriangle_invalid_triangle
+  :line: 12
+  :message: ''
+- :test: test_determinetriangle_accute_triangle
+  :line: 22
+  :message: ''
+- :test: test_determinetriangle_obtuse_triangle
+  :line: 29
+  :message: ''
+- :test: test_determinetriangle_right_angle_triangle
+  :line: 35
+  :message: ''
+:failures: []
+:ignores: []
+:counts:
+  :total: 4
+  :passed: 4
+  :failed: 0
+  :ignored: 0
+:stdout:
+- short1 :3
+- short2 :2
+- 'long1: 9'

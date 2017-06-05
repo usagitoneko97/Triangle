@@ -6,20 +6,23 @@
 - :test: test_determinetriangle_invalid_triangle
   :line: 12
   :message: ''
+- :test: test_getValidityTriangle_input_neg7_neg6_6_expected_invalid
+  :line: 21
+  :message: ''
 - :test: test_determinetriangle_accute_triangle
-  :line: 22
+  :line: 25
   :message: ''
 - :test: test_determinetriangle_obtuse_triangle
-  :line: 29
+  :line: 32
   :message: ''
 - :test: test_determinetriangle_right_angle_triangle
-  :line: 35
+  :line: 38
   :message: ''
 :failures: []
 :ignores: []
 :counts:
-  :total: 4
-  :passed: 4
+  :total: 5
+  :passed: 5
   :failed: 0
   :ignored: 0
 :stdout:

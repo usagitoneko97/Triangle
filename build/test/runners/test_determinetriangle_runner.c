@@ -31,6 +31,7 @@ char* GlobalOrderError;
 extern void setUp(void);
 extern void tearDown(void);
 extern void test_determinetriangle_invalid_triangle(void);
+extern void test_getValidityTriangle_input_neg7_neg6_6_expected_invalid(void);
 extern void test_determinetriangle_accute_triangle(void);
 extern void test_determinetriangle_obtuse_triangle(void);
 extern void test_determinetriangle_right_angle_triangle(void);
@@ -50,9 +51,10 @@ int main(void)
 {
   UnityBegin("test_determinetriangle.c");
   RUN_TEST(test_determinetriangle_invalid_triangle, 12);
-  RUN_TEST(test_determinetriangle_accute_triangle, 22);
-  RUN_TEST(test_determinetriangle_obtuse_triangle, 29);
-  RUN_TEST(test_determinetriangle_right_angle_triangle, 35);
+  RUN_TEST(test_getValidityTriangle_input_neg7_neg6_6_expected_invalid, 21);
+  RUN_TEST(test_determinetriangle_accute_triangle, 25);
+  RUN_TEST(test_determinetriangle_obtuse_triangle, 32);
+  RUN_TEST(test_determinetriangle_right_angle_triangle, 38);
 
   return (UnityEnd());
 }

@@ -45,6 +45,16 @@ void test_determinetriangle_invalid_triangle(void)
 
 }
 
+void test_getValidityTriangle_input_neg7_neg6_6_expected_invalid(void){
+
+  UnityAssertEqualString((const char*)(("invalid")), (const char*)((determine_type_and_validity_triangle(-7, -6, 6))), (
+
+ ((void *)0)
+
+ ), (UNITY_UINT)(22));
+
+}
+
 
 
 void test_determinetriangle_accute_triangle(void)
@@ -55,13 +65,13 @@ void test_determinetriangle_accute_triangle(void)
 
    ((void *)0)
 
-   ), (UNITY_UINT)(24));
+   ), (UNITY_UINT)(27));
 
     UnityAssertEqualString((const char*)(("accute")), (const char*)((determine_type_and_validity_triangle(4, 8, 5))), (
 
    ((void *)0)
 
-   ), (UNITY_UINT)(25));
+   ), (UNITY_UINT)(28));
 
 
 
@@ -77,13 +87,13 @@ void test_determinetriangle_obtuse_triangle(void)
 
    ((void *)0)
 
-   ), (UNITY_UINT)(31));
+   ), (UNITY_UINT)(34));
 
     UnityAssertEqualString((const char*)(("obtuse")), (const char*)((determine_type_and_validity_triangle(7, 6, 8))), (
 
    ((void *)0)
 
-   ), (UNITY_UINT)(32));
+   ), (UNITY_UINT)(35));
 
 }
 
@@ -97,12 +107,12 @@ void test_determinetriangle_right_angle_triangle(void)
 
    ((void *)0)
 
-   ), (UNITY_UINT)(37));
+   ), (UNITY_UINT)(40));
 
     UnityAssertEqualString((const char*)(("right_angle")), (const char*)((determine_type_and_validity_triangle(5, 3, 4))), (
 
    ((void *)0)
 
-   ), (UNITY_UINT)(38));
+   ), (UNITY_UINT)(41));
 
 }

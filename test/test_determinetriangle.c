@@ -18,6 +18,9 @@ void test_determinetriangle_invalid_triangle(void)
     TEST_ASSERT_EQUAL_STRING("invalid", determine_type_and_validity_triangle(-7, -6, 6));
     TEST_ASSERT_EQUAL_STRING("invalid", determine_type_and_validity_triangle(7, 1, 2));
 }
+void test_getValidityTriangle_input_neg7_neg6_6_expected_invalid(void){
+  TEST_ASSERT_EQUAL_STRING("invalid", determine_type_and_validity_triangle(-7, -6, 6));
+}
 
 void test_determinetriangle_accute_triangle(void)
 {
